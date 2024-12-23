@@ -197,8 +197,77 @@ function frameSoni(minut, frame) {
 }
 console.log(frameSoni(1, 1));
 
+// 31-m
+function calc(str) {
+  return eval(str);
+}
+
+console.log(calc(23 + 4));
+
+// 32-m
+function teng10(a, b) {
+  return a === 10 || b === 10 || a + b === 10;
+}
+
+console.log(teng10(9, 10));
+
+// 33-m
 function litrMasofa(km) {
   return km * 10;
 }
 
 console.log(litrMasofa(15));
+
+// 34-m
+function fun(a, b) {
+  return Math.max(a, b);
+}
+
+console.log(fun(3, 7));
+
+// 36-m
+
+function tengStrings(str1, str2) {
+  return str1.length === str2.length;
+}
+
+console.log(tengStrings("AB", "CD"));
+
+// 37-m
+function boshStr(str) {
+  return str === "";
+}
+
+console.log(boshStr(""));
+
+// 38-m
+function bolinsin5(son) {
+  return son % 5 === 0;
+}
+
+console.log(bolinsin5(10));
+
+// 39-m
+function bolinsin100(son) {
+  return son % 100 === 0;
+}
+
+console.log(bolinsin100(200));
+
+// 40-m
+function uzunlik(str) {
+  if (str === "") {
+    return 0;
+  } else {
+    return 1 + uzunlik(str.slice(1));
+  }
+}
+
+console.log(uzunlik("apple"));
+
+// 41-m
+function bolinsin(x, y) {
+  return x % y === 0;
+}
+
+console.log(bolinsin(98, 7));
